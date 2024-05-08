@@ -1,0 +1,9 @@
+ideas = {
+    country = {
+        fur_kaiser = {
+            modifier = {
+                add_war_support = 0.15
+            }
+        }
+    }
+}
