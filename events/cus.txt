@@ -269,3 +269,17 @@ news_event = {
         name = "Okay...."
     }
 }
+
+news_event = {
+    id = cus.4
+    picture = GFX_news_event_019
+
+    title = "Assasination of Hitler"
+    desc = "Today Hermann Göring, announced the Death of Adolf Hitler. He was found dead with a bullet in the back of his skull. Henceforth Göring has stepped into place as the Führer!"
+    option = {
+		name = "Better luck next time."
+    }
+    option = {
+        name = "Okay...."
+    }
+}

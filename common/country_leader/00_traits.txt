@@ -13,6 +13,18 @@
 ###Todo remove commented advisor experience gains
 
 leader_traits = {
+
+	unstable = {
+		random = no
+		stability_factor = -0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
 	war_veteran = {
 		random = no
 		war_support_factor = 0.1

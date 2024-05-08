@@ -1055,9 +1055,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 7
 		}
+		available = {
+			stability_factor < 0.6
+		}
 		prerequisite = { focus = "Towards A New Reich" }
 		completion_reward = {
-
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Hermann Goring"
+				desc = ""
+				picture = GFX_portrait_GER_hermann_goring
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = { unstable }
+			}
+			news_event = { id = cus.4 hours = 6 }
 		}
 	}
 
