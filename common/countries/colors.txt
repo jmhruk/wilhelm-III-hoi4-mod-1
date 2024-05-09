@@ -932,7 +932,3 @@ QUE = {
 	color = rgb { 0 102 255 }
 	color_ui = rgb { 0 31 77 }
 }
-HLR = {
-	color = rgb { 255 225 27 }
-	color_ui = rbg { 219 194 67 }
-}

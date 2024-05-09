@@ -965,17 +965,6 @@ focus_tree = {
 		
 	}
 
-
-
-
-
-
-	focus = {
-		id = "PLACEHOLDER"
-		x = 90
-		y = 100
-	}
-
 	### Third Reich ###
 	focus = {
 		id = "Towards A New Reich"
@@ -987,7 +976,6 @@ focus_tree = {
 			factor = 7
 		}
 		prerequisite = { focus = "Reinstate Crown Prince Wilhelm" }
-		relative_position_id = "Towards A New Reich"
 		mutually_exclusive = { focus = "Remenants Of The Past" }
 		completion_reward = {
 			add_popularity = { ideology = fascism popularity = 0.1 } 
@@ -997,17 +985,17 @@ focus_tree = {
 	focus = {
 		id = "Grant Royal Priveleges"
 		icon = GFX_goal_generic_national_unity
-		x = -1
-		y = 1
+		x = 64
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 7
 		}
 		prerequisite = { focus = "Towards A New Reich"}
-		relative_position_id = "Towards A New Reich"
 		custom_effect_tooltip = "Grant Wilhelm III Royal Priveleges Enforcing his loyalty to the German Reich."
 		completion_reward = {
 			add_political_power = 100
+			add_stability = -0.1
 		}
 	}
 
@@ -1015,14 +1003,13 @@ focus_tree = {
 	focus = {
 		id = "Prepare Military Support"
 		icon = GFX_goal_generic_military_deal
-		x = -2
-		y = 2
+		x = 63
+		y = 3
 		cost = 5
 		ai_will_do = {
 			factor = 7
 		}
 		prerequisite = { focus = "Grant Royal Priveleges" }
-		relative_position_id = "Towards A New Reich"
 
 		completion_reward = {
 			add_stability = -0.15
@@ -1032,14 +1019,13 @@ focus_tree = {
 	focus = {
 		id = "Destable Internal Politics"
 		icon = GFX_goal_generic_military_deal
-		x = 0
-		y = 2
+		x = 65
+		y = 3
 		cost = 5
 		ai_will_do = {
 			factor = 7
 		}
 		prerequisite = { focus = "Grant Royal Priveleges" }
-		relative_position_id = "Towards A New Reich"
 		completion_reward = {
 			add_stability = -0.15
 		}
@@ -1048,15 +1034,14 @@ focus_tree = {
 	focus = {
 		id = "Assassinate Hitler"
 		icon = GFX_focus_ger_oppose_hitler
-		relative_position_id = "Towards A New Reich"
-		x = 2
-		y = 1
+		x = 67
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 7
 		}
 		available = {
-			stability_factor < 0.6
+			has_stability < 0.6
 		}
 		prerequisite = { focus = "Towards A New Reich" }
 		completion_reward = {
@@ -1071,6 +1056,12 @@ focus_tree = {
 			}
 			news_event = { id = cus.4 hours = 6 }
 		}
+	}
+
+	focus = {
+		id = ""
+		x = 67
+		y = 3
 	}
 
 
@@ -10670,3 +10661,5 @@ focus_tree = {
 		}
 	}
 }
+
+
